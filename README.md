@@ -1,16 +1,9 @@
-# React + Vite
+I built a modern Expense Tracker application using React and Vite. The application allows users to add expenses with categories, view total expenses, track category-wise spending, and remove entries dynamically. I also implemented a live currency conversion feature that converts the total expense amount into multiple currencies in real time.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project follows a component-based architecture using reusable React components such as ExpenseForm, ExpenseList, SummaryPanel, CategoryBreakdown, and CurrencyConverter. State management was handled using React Hooks including useState and useEffect without using any third-party state management libraries.
 
-Currently, two official plugins are available:
+For live exchange rates, I used the Frankfurter API to fetch real-time currency conversion data. Loading and error handling were implemented to ensure the UI remains stable even if the API request fails.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+One of the main challenges was creating a clean and responsive user interface while maintaining consistent spacing and layout across desktop and mobile screens. I improved the design using custom CSS, gradients, glassmorphism effects, hover animations, and responsive layouts without relying on external UI templates.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+With more time, I would add data persistence using local storage or a backend database, charts for expense analytics, dark mode support, edit functionality for expenses and also improve the user interface.
